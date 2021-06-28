@@ -27,7 +27,6 @@ namespace HybridWebView.iOS.Renderer
                     string contentDirectoryPath = Path.Combine(NSBundle.MainBundle.BundlePath);
                     Control.LoadHtmlString(Element.Source, new NSUrl(contentDirectoryPath, true));
                 }
-                //Control.LoadHtmlString(new NSString(Element.Source), new NSUrl("http://home.boxerproperty.com"));
             }
         }
         protected override void OnElementChanged(ElementChangedEventArgs<CustomWebView> e)
